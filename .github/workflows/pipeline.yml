@@ -1,0 +1,30 @@
+name: Deployment pipeline
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches: [master]
+    types: [opened, synchronize]
+
+jobs:
+  build-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install
+      - name: Check style
+        run: npm run lint
+      - name: Run tests
+        run: npm test
+      - name: Build frontend
+        run: npm run build:ui
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+      - name: e2e tests
+        run: npm run test:e2e
