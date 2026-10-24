@@ -16,3 +16,6 @@ Info
 ```
 https://fs-cicd-phonebook.onrender.com/info
 ```
+
+
+Pull request mandatory before merging
