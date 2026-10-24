@@ -28,3 +28,11 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: e2e tests
         run: npm run test:e2e
+
+  deploy-pipeline:
+    needs: [build-pipeline]
+    if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ';'), '#skip') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger deployment
+        run: curl ${{ secrets.RENDER_DEPLOY_HOOK }}
