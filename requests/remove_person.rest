@@ -1,0 +1,9 @@
+DELETE https://phonebook-be-23452345.fly.dev/api/persons/
+
+
+###
+DELETE http://localhost:3000/api/persons/65fbe64fc1c23c863a3881c4
+
+
+###
+DELETE http://localhost:3000/api/persons/1

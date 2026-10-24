@@ -1,0 +1,43 @@
+POST https://phonebook-be-23452345.fly.dev/api/persons
+Content-Type: application/json
+
+{
+    "name": "Pelle",
+    "number": "99-99-99999"
+}
+
+###
+POST https://phonebook-be-23452345.fly.dev/api/persons
+Content-Type: application/json
+
+{
+    "number": "99-99-99999"
+}
+
+
+
+###
+POST http://localhost:3000/api/persons
+Content-Type: application/json
+
+{
+    "name": "Pelle",
+    "number": "09-1234556"
+}
+
+###
+POST http://localhost:3000/api/persons
+Content-Type: application/json
+
+{
+    "name": "Pelle",
+    "number": "99-99-99999"
+}
+
+###
+POST http://localhost:3000/api/persons
+Content-Type: application/json
+
+{
+    "number": "99-99-99999"
+}
