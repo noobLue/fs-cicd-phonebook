@@ -4,21 +4,15 @@ Urls
 
 Frontend
 ```
-https://phonebook-be-23452345.fly.dev/
+https://fs-cicd-phonebook.onrender.com/
 ```
 
 Backend
 ```
-https://phonebook-be-23452345.fly.dev/api/persons
+https://fs-cicd-phonebook.onrender.com/api/persons
 ```
 
 Info
 ```
-https://phonebook-be-23452345.fly.dev/info
+https://fs-cicd-phonebook.onrender.com/info
 ```
-
-
-Frontend repository
-```
-https://github.com/noobLue/fullstack3fe
-```# fs-cicd-phonebook
